@@ -10896,8 +10896,18 @@ section {
 }
 
 .device {
+  display: flex;
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  height: 100%; /* Установите высоту, которая подходит вам. Например, 300px, 100%, и т.д. */
+  width: 100%;
   position: relative;
   background-size: cover;
+}
+
+.device img {
+  width: 150%;
+  height: 150%;
 }
 
 .device::after {
